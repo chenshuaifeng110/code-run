@@ -1,5 +1,5 @@
 import { Registry } from 'monaco-textmate'
-import { base } from '@/config'
+// import { base } from '@/config'
 import { wireTmGrammars } from 'monaco-editor-textmate'
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api'
 import { loadWASM } from 'onigasm'
@@ -10,7 +10,7 @@ import {
 } from '@/config/constants'
 
 let hasGetWorkUrl = false
-
+const base  = ""
 // 初始化编辑器
 export const initMonacoEditor = async () => {
   // 加载onigasm的WebAssembly文件
